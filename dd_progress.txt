@@ -1,0 +1,23 @@
+Show progress during dd copy
+dd is a popular, generic command-line tool for copying files from 1 location to another. It is often used to copy entire disk images.
+
+Like many Linux command line tools, it operates silently unless something unexpected happens. Its lack of visual progress feedback is a nice feature for scripting. However, it can leave you wondering about its progress if you are interactively dd-copying a large disk.
+
+To illustrate, you run the following (valid, but perhaps not very useful) dd copy:
+
+$ dd if=/dev/random of=/dev/null bs=1K count=100 
+
+
+It will run for a few minutes as it copies (and immediately discards) 100 blocks of randomly generated data, each of size 1 KB. 
+
+To get a progress report while dd is running, you need to open another virtual terminal, and then send a special USR1 signal to the dd process.
+
+First, find out the process id of the dd process by running the following in the new virtual terminal.
+$ pgrep -l '^dd$'
+8789 dd
+$
+
+
+To send the USR1 signal to the dd prcoess:
+$ kill -USR1  8789
+$

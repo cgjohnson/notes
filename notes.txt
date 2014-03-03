@@ -1,0 +1,15 @@
+Bash Commands in Ruby:
+
+Backticks
+
+eg
+
+current_directory_contents = `ls`
+
+/////////////////////////////////
+
+Make a Custome bash Command
+
+Write Script in Bash
+chmod +x the script
+cp the script into /usr/bin/

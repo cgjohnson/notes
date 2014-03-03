@@ -1,0 +1,52 @@
+#UPDATE SYSTEM
+sudo yum update
+
+#ALLOW ME TO SUDO W/O PASSWORD
+sudo visudo
+uncommment wheel group w/o password
+sudo usermod -G10 charlie
+
+#INSTALL CHROME
+
+Download google chrome
+sudo yum install google-chrome-stable
+
+#INSTALL VIM AND GIT
+
+sudo yum install vim git
+
+
+#INSTALL HIPCHAT
+
+sudo su
+echo "[atlassian-hipchat]
+name=Atlassian Hipchat
+baseurl=http://downloads.hipchat.com/linux/yum
+enabled=1
+gpgcheck=1
+gpgkey=https://www.hipchat.com/keys/hipchat-linux.key
+" > /etc/yum.repos.d/atlassian-hipchat.repo
+yum install hipchat 
+
+#EDIT HOSTNAME
+
+sudo hostname thebridge
+replace contents of /etc/hostname with thebridge
+
+#INSTALL RVM
+
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
+source /home/charlie/.rvm/scripts/rvm
+
+#CREATE PROJECTS DIR
+
+mkdir ~/projects
+
+
+#OTHER
+install thunderbird
+import bookmarks
+git clone vim config
+git clone major projects into projects directory
+install berkshelf
+
