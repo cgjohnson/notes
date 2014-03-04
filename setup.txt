@@ -49,4 +49,6 @@ import bookmarks
 git clone vim config
 git clone major projects into projects directory
 install berkshelf
+git ssh keys
+
 
