@@ -37,6 +37,8 @@ replace contents of /etc/hostname with thebridge
 
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 source /home/charlie/.rvm/scripts/rvm
+put rvm source code call in all /.startup scripts
+make sure terminal runs command as login shell
 
 #CREATE PROJECTS DIR
 
@@ -48,7 +50,11 @@ install thunderbird
 import bookmarks
 git clone vim config
 git clone major projects into projects directory
-install berkshelf
+install major gems (chef, berkshelf, test-kitchen, etc)
 git ssh keys
+install virtualbox
+
+systemctl enable sshd
+systemctl start sshd
 
 

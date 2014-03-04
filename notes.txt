@@ -8,7 +8,7 @@ current_directory_contents = `ls`
 
 /////////////////////////////////
 
-Make a Custome bash Command
+Make a Custom bash Command
 
 Write Script in Bash
 chmod +x the script
