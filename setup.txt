@@ -57,4 +57,5 @@ install virtualbox
 systemctl enable sshd
 systemctl start sshd
 
-
+~/.ssh/config
+chmod 644 config
