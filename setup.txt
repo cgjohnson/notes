@@ -57,5 +57,4 @@ install virtualbox
 systemctl enable sshd
 systemctl start sshd
 
-~/.ssh/config
-chmod 644 config
+git config --global user.email "github email, not a random one"
