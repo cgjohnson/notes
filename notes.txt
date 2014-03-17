@@ -13,3 +13,7 @@ Make a Custom bash Command
 Write Script in Bash
 chmod +x the script
 cp the script into /usr/bin/
+
+
+
+some more notes....
