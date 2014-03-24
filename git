@@ -1,0 +1,16 @@
+To switch pushing to use ssh key rather than ask 
+for username / password:
+
+git remote set-url origin git@github.com:<Username>/<Project>.git
+
+To clone down different branches of a repository:
+
+git checkout <Branch Name>
+git fetch origin <Branch Name>
+
+Merging develop into master
+
+git checkout master
+git merge --no-ff develop
+git push origin master
+git branch -d develop
