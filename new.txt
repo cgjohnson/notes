@@ -11,3 +11,7 @@ gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB
 
 ##git setup
 see: https://help.github.com/articles/generating-an-ssh-key/
+
+install gems
+
+gem install sinatra slim rerun thin
